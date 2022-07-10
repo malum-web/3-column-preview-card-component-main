@@ -7,6 +7,90 @@
     --brightOrange: hsl(31, 77%, 52%);
     --darkCyan: hsl(184, 100%, 22%);
     --veryDarkCyan: hsl(179, 100%, 13%);
-    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --transparentWhite: hsla(0, 0%, 100%, 0.60);
     --veryLightGray: hsl(0, 0%, 95%);
 }
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryLightGray);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 800px;
+    height: 400px;
+}
+
+.car {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+img {
+    width: 70px;
+}
+
+h1 {
+    color: var(--veryLightGray);
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p {
+    color: var(--transparentWhite);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+button {
+    cursor: pointer;
+    align-self: center;
+    margin-top: 50px;
+    border: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.sedans {
+    background: var(--brightOrange);
+    border-radius: 15px 0  0 15px;
+}
+
+.sedans button {
+    color: var(--brightOrange);
+}
+
+.suvs {
+    background: var(--darkCyan);
+}
+
+.suvs button {
+    color: var(--darkCyan);
+}
+
+.luxury {
+    background: var(--veryDarkCyan);
+    border-radius: 0 15px 15px 0;
+}
+
+.luxury button {
+    color: var(--veryDarkCyan);
+}
+
