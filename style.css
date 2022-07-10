@@ -94,3 +94,19 @@ button {
     color: var(--veryDarkCyan);
 }
 
+@media screen and (max-width: 375px) { 
+    .container {
+        flex-direction: column;
+        width: 330px;
+        height: auto;
+        margin: 20px;
+    }
+
+    .sedans {
+        border-radius: 15px 15px  0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 15px 15px;
+    }
+}
